@@ -1,0 +1,154 @@
+.all-contents {
+    width: 800px;
+    display: flex;
+    margin: auto;
+}
+
+.left-content {
+    margin-left: 30px;
+}
+
+.img-content {
+    width: 350px;
+    height: 250px;
+}
+
+.image {
+    display: block;
+}
+
+.right-content {
+    margin-left: 400px;
+}
+
+.purchase-form
+.item-form__table {
+    margin-bottom: 0;
+}
+.item-form__row
+.item-form__name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.item-form__brand {
+    font-weight: 200;
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+.item-form__price {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.span-item {
+    font-size: 15px;
+}
+
+.span-tax {
+    font-size: 15px;
+}
+
+.item-form__label {
+    display: flex;
+}
+
+.labels {
+    margin-top: 5px;
+}
+.like-label {
+    font-size: 14px;
+}
+.like-counts
+.like-count
+.comment-label {
+    font-size: 14px;
+}
+.comment-counts
+.comment-count
+.purchase__button {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.purchase__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}
+
+.item-form__details-1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.item-form__content input {
+    font-size: 15px;
+    font-weight: 300;
+}
+.item-form__details-2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.detail {
+    display: flex;
+}
+
+.item-form__detail {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.item-form__data-1 {
+    margin-left: 8px;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 50px;
+    padding: 7px;
+    background-color: rgba(160, 158, 158, 0.564);
+    color: black;
+}
+
+.item-form__data-2 {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.comment-form
+.comment-form__heading
+.comment-form__heading-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(164, 164, 164);
+}
+.comment-form__label {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.comment-form__textarea textarea {
+    padding: 8px 16px;
+    height: 180px;
+}
+.comment__button {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.comment__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}

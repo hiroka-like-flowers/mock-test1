@@ -28,11 +28,21 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
+                        @if (Auth::check())
                         <li class="header__list-item">
-                            <form class="header__form">
+                            <form class="header__form" action="/logout" method="POST">
+                                @csrf
                                 <button class="header__form--logout">ログアウト</button>
                             </form>
                         </li>
+                        @else
+                        <li class="header__list-item">
+                            <form class="header__form" action="/login" method="POST">
+                                @csrf
+                                <button class="header__form--login">ログイン</button>
+                            </form>
+                        </li>
+                        @endif
                         <li class="header__list-item">
                             <form class="header__form">
                                 <button class="header__form--mypage">マイページ</button>

@@ -1,0 +1,24 @@
+* {
+    font-weight: 300;
+    color: black;
+}
+@media (min-width: 1400px) and (max-width: 1540px) {
+    body {
+        background-color: white;
+    }
+}
+
+.app
+
+.header {
+    background-color: black;
+}
+
+.header__inner {
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.header__heading
+
+.header__logo

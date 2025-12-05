@@ -1,5 +1,5 @@
-@extends('layouts.logout')
-
+@extends('layouts.app')
+<!-- 商品一覧・ログイン後 -->
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 @endsection
@@ -7,9 +7,10 @@
 @section('content')
 <div class="index__content">
     <div class="index-form__heading">
-        <p class="index-form__heading-left">おすすめ</p>
-        <p class="index-form__heading_right">マイリスト</p>
+        <button class="index-form__heading-button" data-type="recommend">おすすめ</button>
+        <button class="index-form__heading_button" data-type="mylist">マイリスト</button>
     </div>
+    <span class="line"></span>
     <div class="main__content">
         <div class="exhibition-contents">
             <div class="exhibition-content">
