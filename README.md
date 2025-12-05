@@ -16,3 +16,6 @@ phpMyAdmin:http://localhost:8086
 php:8.2-fpm
 nginx:1.21.1
 mysql:8.0.26
+Laravel Framework 8.83.29
+## ER図
+<img width="974" height="1306" alt="image" src="https://github.com/user-attachments/assets/92c331fa-ed20-4ab4-b847-021e4acf0f6f" />
