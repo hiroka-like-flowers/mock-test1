@@ -1,15 +1,15 @@
 @extends('layouts.app')
-
+<!-- プロフィール設定画面・初回登録 -->
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/mypage.css') }}">
+<link rel="stylesheet" href="{{ asset('css/first_profile.css') }}">
 @endsection
 
 @section('content')
-<div class="mypage__content">
-    <div class="mypage-form__heading">
-        <h1 class="mypage-form__heading-title">プロフィール設定</h1>
+<div class="profile__content">
+    <div class="profile-form__heading">
+        <h1 class="profile-form__heading-title">プロフィール設定</h1>
     </div>
-    <form class="mypage-form">
+    <form class="profile-form">
         <div class="form__group">
             <div class="form__image">
                 <output class="image_output" id="list"></output>
@@ -22,10 +22,10 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="name" value="{{ old('name') }}" />
+                    <input type="text" name="user_name" value="{{ old('name') }}" />
                 </div>
                 <div class="form__error">
-                    @error('name')
+                    @error('user_name')
                     {{ $message}}
                     @enderror
                 </div>

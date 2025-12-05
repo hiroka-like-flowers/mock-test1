@@ -9,7 +9,8 @@
     <div class="register-form__heading">
         <h1 class="register-form__heading-title">会員登録</h1>
     </div>
-    <form class="register-form">
+    <form class="register-form" action="/register" method="POST">
+        @csrf
         <div class="form__group">
             <div class="form__group-title">
                 <span class="form__label--item">ユーザー名</span>

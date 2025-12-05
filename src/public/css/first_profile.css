@@ -1,0 +1,80 @@
+.profile__content
+.profile-form__heading {
+    text-align: center;
+}
+
+.profile-form__heading-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+.profile-form {
+    margin: 30px 0;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_output {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.image input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.868);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}
+
+.form__group-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.form__label--item {
+    margin: 10px 0;
+}
+
+.form__group-content
+.form__input--text input {
+    width: 500px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 5px;
+}
+
+.form__error {
+    color: red;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.form__button {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.form__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}

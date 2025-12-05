@@ -1,0 +1,50 @@
+.mail__content
+.mail__form--heading {
+    text-align: center;
+    line-height: 20px;
+}
+
+.mail__form--heading-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mail__form--heading-subtitle {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mail-form {
+    margin: 30px 0;
+}
+
+.form__button {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.form__button-submit {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(199, 195, 195);
+    cursor: pointer;
+    text-align: center;
+}
+.form__button-confirmation {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.form__button-again {
+    color: rgba(0, 191, 255, 0.543);
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+}

@@ -1,0 +1,151 @@
+.all-contents {
+    margin: 80px 40px;
+}
+
+.left-content {
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+.item-form__table {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.item-form__row {
+    margin-right: 30px;
+}
+.item-form__image {
+    width: 40%;
+}
+
+.image-content img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.item-form__label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.item-form__price {
+    font-size: 20px;
+    margin-left: 50px;
+}
+.span-item {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.line {
+    border-bottom: solid 1px rgb(101, 101, 101);
+    padding: 300px;
+}
+.purchase-form__group {
+    margin-top: 25px;
+}
+
+.purchase-form__label {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.purchase-form__select-inner {
+    position: relative;
+}
+
+.purchase-form__select-inner::after {
+    position: absolute;
+    top: 50%;
+    left: 91%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid rgb(101, 101, 101);
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    content: "";
+    transform: translateY(-30%);
+}
+
+.purchase-form__select {
+    padding: 6px 14px;
+    width: 300px;
+    color: rgb(101, 101, 101);
+}
+.address-form__group {
+}
+
+.address-form-top {
+    margin-top: 20px;
+}
+.address-form__label {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.address__link {
+    margin-left: 700px;
+}
+
+.address__link-submit {
+    color: rgba(0, 191, 255, 0.543);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.address-form__inner {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.right-content {
+    position: absolute;
+    top: 170px;
+    right: 80px;
+}
+
+.payment-form
+.payment-form__group {
+    width: 350px;
+    border-collapse: collapse;
+}
+
+.payment-form__table {
+    border: 1px solid black;
+}
+.payment-form__label,
+.payment-form__input {
+    padding: 20px;
+}
+
+.payment-form__label {
+    font-size: 15px;
+}
+
+.payment-form__input input {
+    font-size: 18px;
+}
+
+.span-item_right {
+    font-size: 15px;
+}
+
+.payment__button {
+    width: 350px;
+    margin: 50px 0;
+}
+
+.payment__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.868);
+}

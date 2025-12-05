@@ -15,7 +15,7 @@
             <button class="form__button-submit" type="submit">認証はこちらから</button>
         </div>
         <div class="form__button-confirmation">
-            <button class="form__button" type="submit">認証メールを再送する</button>
+            <button class="form__button-again" type="submit">認証メールを再送する</button>
         </div>
     </form>
 </div>

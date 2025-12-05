@@ -1,0 +1,110 @@
+.sell-content {
+    text-align: center;
+}
+.sell-heading {
+    margin: 20px 0;
+}
+
+.sell-heading-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sell-form {
+    margin: 30px 0;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.image_output {
+    border: dotted 3px rgb(101, 101, 101);
+    width: 500px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.image input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.868);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}
+
+.input_error
+
+.input_error_message {
+    color: red;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.sell-section {
+    margin-top: 30px;
+}
+
+.sell-section-title {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(69, 68, 68);
+    border-bottom: 1px solid rgb(101, 101, 101);
+    width: 700px;
+}
+
+/* うまくいかなかったらcontact.css参照 */
+.condition-form__select {
+    padding: 8px 16px;
+    width: 50%;
+    color: rgb(101, 101, 101);
+}
+
+.register-item input {
+    width: 500px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 5px;
+    color: black;
+}
+
+.register-item__textarea textarea {
+    width: 500px;
+    font-size: 14px;
+    padding: 40px;
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 5px;
+    color: black;
+}
+
+.span-item {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 450px;
+}
+
+.form__button {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.form__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.868);
+    cursor: pointer;
+}

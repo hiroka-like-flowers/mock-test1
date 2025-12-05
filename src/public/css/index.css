@@ -1,0 +1,97 @@
+.index__content
+.index-form__heading {
+    display: flex;
+}
+
+.index-form__heading-left {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.index-form__heading-left :hover {
+    color: rgb(255, 0, 0);
+}
+
+.index-form__heading-right {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.index-form__heading-right :hover {
+    color: rgb(255, 0, 0);
+}
+.line {
+    width: 500px;
+    height: 1px;
+    background-color: rgb(101, 101, 101);
+}
+
+.main__content
+.exhibition-contents {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.exhibition-content {
+    margin: 3px;
+    width: 270px;
+    position: relative;
+}
+
+.exhibition-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.img-content {
+    width: 270px;
+    height: 160px;
+}
+
+.detail-content {
+    color: black;
+}
+
+.pagination-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    margin-left: -90px;
+}
+
+.page-item-active {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(255, 200, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 7px;
+}
+
+.page-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 7px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: black;
+}
+
+.page-link-active {
+    color: white;
+}
