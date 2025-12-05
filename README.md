@@ -1,6 +1,6 @@
 # mock-test1
 ## 環境構築
-git clone
+git clone https://github.com/hiroka-like-flowers/mock-test1.git
 docker-compose up -d --build
 docker-compose exec php bash
 composer install
