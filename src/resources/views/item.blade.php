@@ -7,24 +7,25 @@
 @section('content')
 <div class="all-contents">
     <div class="left-content">
-        <output id="list" class="img-content"></output>
+        <img src="{{ asset($exhibition->image) }}" class="img-content">
     </div>
     <div class="right-content">
-        <form class="purchase-form">
+        <form class="purchase-form" action="{{ route('order.index', ['item_id' => $exhibition->id]) }}" method="POST">
+            @csrf
             <div class="item-form__table">
                 <div class="item-form__row">
                     <h2 class="item-form__name">
-                        商品名
+                        {{ $exhibition->name }}
                     </h2>
                 </div>
                 <div class="item-form__row">
                     <p class="item-form__brand">
-                        ブランド名
+                        {{ $exhibition->brand }}
                     </p>
                 </div>
                 <div class="item-form__row">
                     <p class="item-form__price">
-                        <span class="span-item">¥</span>価格<span class="span-tax">(税込)</span>
+                        <span class="span-item">¥</span>{{ $exhibition->price }}<span class="span-tax">(税込)</span>
                     </p>
                 </div>
                 <table class="item-form-label">
@@ -59,8 +60,8 @@
                 <h3 class="item-form__details-1">
                     商品説明
                 </h3>
-                <th class="item-form__content">説明がはいる</th>
-                <input class="item-form__content" type="hidden" name="detail" value="説明が入る">
+                <th class="item-form__content">{{ $exhibition->description }}</th>
+                <input class="item-form__content" type="hidden" name="detail">
             </tr>
             <tr class="item-form__row">
                 <h3 class="item-form__details-2">
@@ -68,20 +69,24 @@
                 </h3>
                 <tr class="detail">
                     <th class="item-form__detail">カテゴリー</th>
-                    <td class="item-form__data-1">カテゴリーがはいる</td>
-                    <input type="hidden" name="category_id">
+                    <td class="item-form__data-1">{{ $exhibition->category->name }}</td>
                 </tr>
                 <tr class="detail">
                     <th class="item-form__detail">商品の状態</th>
-                    <td class="item-form__data-2">商品の状態が入る</td>
-                    <input type="hidden" name="condition_id">
+                    <td class="item-form__data-2">{{ $exhibition->condition->name }}</td>
                 </tr>
             </tr>
         </table>
-        <form class="comment-form">
+        <form class="comment-form" method="POST" action="{{ route('comment.store', $exhibition->id) }}">
+            @csrf
             <div class="comment-form__heading">
                 <h3 class="comment-form__heading-title">コメント</h3>
-                <div>ここにコメントしたユーザーとコメントが入る</div>
+                @foreach($exhibition->comments as $comment)
+                <div>
+                    <strong>{{ $comment->user->name }}:</strong>
+                    {{ $comment->comment }}
+                </div>
+                @endforeach
                 <label class="comment-form__label" for="detail">商品へのコメント</label>
                 <textarea class="comment-form__textarea" name="detail" id="" cols="50" rows="10"></textarea>
             </div>

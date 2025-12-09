@@ -7,30 +7,34 @@
 @section('content')
 <div class="mypage-contents">
     <div class="mypage-contents-heading">
+        <form action="/mypage/profile" method="GET" type="submit"></form>
         <div class="form__image">
-            <output class="image_output" id="list"></output>
-            <input type="file" id="my_image" class="image" name="my_image" />
+            <img src="{{ asset($user->picture) }}" class="image" name="my_image" />
         </div>
         <div class="mypage-contents-user">
-            <p class="mypage-contents-user-name">ユーザー名</p>
-            <a href="/profile" class="mypage-contents-user-edit">プロフィール編集</a>
+            <p class="mypage-contents-user-name">{{ $user->name }}</p>
+            <button class="mypage-contents-user-edit">プロフィールを編集</button>
         </div>
     </div>
     <div class="mypage-contents-body__sell">
-        <a href="" class="sell-link">
-            <img src="" alt="商品画像" class="sell-img" />
+        @foreach ($sellOrders as $order)
+        <a href="" class="sell-link" value="出品した商品">
+            <img src="{{ asset($order->exhibition->image) }}" alt="商品画像" class="sell-img" />
         </a>
         <div class="sell-content">
-            <p>商品名</p>
+            <p>{{ $order->buyer->name }}</p>
         </div>
+        @endforeach
     </div>
     <div class="mypage-contents-body__buy">
-        <a href="" class="buy-link">
-            <img src="" alt="商品画像" class="buy-img" />
+        @foreach ($buyOrders as $order)
+        <a href="" class="buy-link" value="購入した商品">
+            <img src="{{ asset($order->exhibition->image) }}" alt="商品画像" class="buy-img" />
         </a>
         <div class="buy-content">
-            <p>商品名</p>
+            <p>{{ $order->sell->name }}</p>
         </div>
+        @endforeach
     </div>
 </div>
 @endsection

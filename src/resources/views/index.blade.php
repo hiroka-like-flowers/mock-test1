@@ -13,13 +13,16 @@
     <span class="line"></span>
     <div class="main__content">
         <div class="exhibition-contents">
+            @foreach ($exhibitions as $exhibition)
             <div class="exhibition-content">
-                <a class="exhibition-link" href="/item"></a>
-                <img src="" alt="商品画像" class="img-content" />
-                <div class="detail-content">
-                    <p>商品名</p>
-                </div>
+                <a class="exhibition-link" href="{{ route('item.show', ['item_id' => $exhibition->id]) }}">
+                    <img src="{{ asset ($exhibition->image) }}" alt="商品画像" class="img-content" />
+                    <div class="detail-content">
+                        <p>{{ $exhibition->name }}</p>
+                    </div>
+                </a>
             </div>
+            @endforeach
         </div>
     </div>
 </div>

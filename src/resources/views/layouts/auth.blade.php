@@ -19,7 +19,7 @@
         <header class="header">
             <div class="header__inner">
                 <span class="header__heading">
-                    <img src="storage/app/public/items/logo.sng" alt="coachtechフリマ" class="header__logo" />
+                    <img src="{{ asset('storage/logo.svg') }}" alt="coachtechフリマ" class="header__logo" />
                 </span>
             </div>
         </header>

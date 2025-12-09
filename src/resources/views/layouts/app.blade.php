@@ -19,7 +19,7 @@
         <header class="header">
             <div class="header__inner">
                 <span class="header__heading">
-                    <img src="storage/app/public/items/logo.sng" alt="coachtechフリマ" class="header__logo" />
+                    <img src="{{ asset('storage/logo.svg') }}" alt="coachtechフリマ" class="header__logo" />
                 </span>
                 <div class="search-box">
                     <form class="search-form">
@@ -37,19 +37,18 @@
                         </li>
                         @else
                         <li class="header__list-item">
-                            <form class="header__form" action="/login" method="POST">
-                                @csrf
+                            <form class="header__form" action="/login" method="GET">
                                 <button class="header__form--login">ログイン</button>
                             </form>
                         </li>
                         @endif
                         <li class="header__list-item">
-                            <form class="header__form">
+                            <form class="header__form" action="/mypage" method="GET">
                                 <button class="header__form--mypage">マイページ</button>
                             </form>
                         </li>
                         <li class="header__list-item">
-                            <form class="header__form">
+                            <form class="header__form" action="/sell" method="GET">
                                 <button class="header__form--listing">出品</button>
                             </form>
                         </li>

@@ -1,0 +1,71 @@
+.mypage-contents
+.mypage-contents-heading {
+    margin-top: 30px;
+    display: flex;
+}
+
+.form__image {
+    margin-left: 400px;
+}
+.image {
+    width: 40%;
+    border-radius: 50%;
+}
+.image image {
+    width: 100%;
+}
+.mypage-contents-user {
+}
+.mypage-contents-user-name {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.mypage-contents-user-edit {
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    background-color: white;
+}
+.mypage-contents-body__sell
+.sell-link {
+    color: black;
+    font-size: 18px;
+}
+
+.sell-link:hover {
+    color: red;
+}
+
+.sell-img {
+    width: 20%;
+}
+.sell-img img {
+    width: 100%;
+    margin-top: 50px;
+}
+.sell-content
+.mypage-contents-body__buy
+.buy-link {
+    color: black;
+    font-size: 18px;
+}
+
+.buy-link:hover {
+    color: red;
+}
+.buy-img {
+    width: 20%;
+}
+.buy-img img {
+    margin-top: 50px;
+    width: 100%;
+}
+.buy-content {
+    margin-top: 5px;
+    font-size: 20px;
+}

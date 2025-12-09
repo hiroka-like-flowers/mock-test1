@@ -18,7 +18,8 @@
 
 .form__group-title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
+    margin-left: 500px;
 }
 
 .form__label--item {
@@ -32,6 +33,7 @@
     padding: 10px;
     border: 1px solid rgb(101, 101, 101);
     border-radius: 5px;
+    margin-left: 500px;
 }
 
 .form__error {
