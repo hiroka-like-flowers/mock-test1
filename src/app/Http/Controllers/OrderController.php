@@ -52,6 +52,7 @@ class OrderController extends Controller
     public function index()
     {
         $orders = Order::with(['buyer', 'sell', 'exhibition'])->get();
+
         return view('orders.index', compact('orders'));
     }
 }

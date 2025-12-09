@@ -39,4 +39,14 @@ class Exhibition extends Model
     {
         return $this->hasOne(Order::class);
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function condition()
+    {
+        return $this->belongsTo(Condition::class);
+    }
 }

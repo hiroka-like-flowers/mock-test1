@@ -34,7 +34,7 @@
 .item-form__brand {
     font-weight: 200;
     font-size: 10px;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 .item-form__price {
@@ -107,17 +107,18 @@
 
 .item-form__data-1 {
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 12px;
-    width: 50px;
+    width: 70px;
     padding: 7px;
-    background-color: rgba(160, 158, 158, 0.564);
     color: black;
+    background-color: rgba(160, 158, 158, 0.564);
 }
 
 .item-form__data-2 {
     margin-left: 20px;
     font-size: 14px;
+    color: black;
 }
 
 .comment-form

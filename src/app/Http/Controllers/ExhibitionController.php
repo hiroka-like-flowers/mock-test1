@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Exhibition;
+use App\Models\Category;
+use App\Models\Condition;
 use Illuminate\Http\Request;
 
 class ExhibitionController extends Controller
@@ -11,18 +13,21 @@ class ExhibitionController extends Controller
     {
         $exhibitions = Exhibition::all();
 
-        return view('exhibitions.index', compact('exhibitions'));
+        return view('index', compact('exhibitions'));
     }
 
-    public function show($id)/* 詳細画面 */
+    public function show($item_id)/* 詳細画面 */
     {
-        $exhibition = Exhibition::(['comments.user', 'likes'])->findOrFail($id);
-        return view('exhibitions.show', compact('exhibition'));
+        $exhibition = Exhibition::with(['category', 'condition', 'comments.user', 'likes'])->findOrFail($item_id);
+        $categories = Category::all();
+        $conditions = Condition::all();
+
+        return view('item', compact('exhibition', 'categories', 'conditions'));
     }
 
     public function create()/* 商品登録 */
     {
-        return view('exhibitions.create');
+        return view('sell');
     }
 
     public function store(Request $request)/* 商品登録処理 */

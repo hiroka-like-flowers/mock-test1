@@ -11,10 +11,12 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
 
-    public function index(){
-        return view('/mypage/profile');
+    public function index()
+    {
+        $user = Auth::user();
+        return view('mypage', compact('user'));
     }
-    
+
     public function storeUser(RegisterRequest $request){
         $user=User::create([
             'name' => $request->name,
@@ -39,7 +41,7 @@ class UserController extends Controller
     public function loginUser(LoginRequest $request){
         $credentials=$request->only('email', 'password');
         if(Auth::attempt($credentials)){
-            return redirect('/?tab=mylist');
+            return redirect('/login');
         }
     }
 
